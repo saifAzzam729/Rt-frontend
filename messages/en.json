@@ -1,0 +1,866 @@
+{
+  "Common": {
+    "brand": "RT-SYR",
+    "tagline": "Recruitments & Tender",
+    "actions": {
+      "signIn": "Sign In",
+      "signOut": "Sign Out",
+      "getStarted": "Get Started",
+      "createAccount": "Create Free Account",
+      "browseJobs": "Browse Jobs",
+      "browseTenders": "Browse Tenders",
+      "report": "Report suspicious activity",
+      "language": {
+        "en": "English",
+        "ar": "العربية"
+      }
+    }
+  },
+  "Navigation": {
+    "work": "How it works",
+    "jobs": "Jobs",
+    "tenders": "Tenders",
+    "about": "About",
+    "dashboard": "Dashboard"
+  },
+  "Home": {
+    "hero": {
+      "typewriter": {
+        "connect": "Connect",
+        "talent": "Talent",
+        "with": "with",
+        "opportunities": "Opportunities"
+      },
+      "description": "The premier platform in Syria for job seekers, organizations posting tenders, and companies hiring top talent. Find your next opportunity or discover the perfect candidate without leaving the country.",
+      "hashtags": "#SyrianJobs #SyrianTenders",
+      "primaryCta": "Create Free Account",
+      "secondaryCta": "Browse Jobs"
+    },
+    "features": {
+      "heading": "Everything You Need",
+      "description": "A comprehensive platform designed for job seekers, organizations, and companies",
+      "cards": {
+        "jobSeekers": {
+          "title": "For Job Seekers",
+          "body": "Browse thousands of job opportunities and tender listings. Apply with ease and track your applications in one place.",
+          "cta": "Explore Jobs"
+        },
+        "organizations": {
+          "title": "For Organizations",
+          "body": "Post tenders and reach qualified candidates. Manage applications and find the right partners for your projects.",
+          "cta": "Post Tenders"
+        },
+        "companies": {
+          "title": "For Companies",
+          "body": "Post job openings and discover top talent. Streamline your hiring process with our intuitive dashboard.",
+          "cta": "Hire Talent"
+        }
+      }
+    },
+    "stats": {
+      "opportunities": "Active Opportunities",
+      "users": "Registered Users",
+      "companies": "Companies & Organizations"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "body": "Join thousands of professionals, organizations, and companies already using our platform to connect and grow.",
+      "button": "Create Your Account Today"
+    }
+  },
+  "BrowseSelector": {
+    "title": "Browse opportunities",
+    "choose": "Choose",
+    "jobsDescription": "Explore company roles across Syria",
+    "tendersDescription": "Review verified organization tenders",
+    "browse": "Browse"
+  },
+  "FeeDisclaimer": {
+    "title": "We never charge applicants for jobs or tenders.",
+    "description": "Our platform does not charge any fees for applicants. Please report any suspicious activity immediately.",
+    "cta": "Report suspicious activity →"
+  },
+  "HowItWorks": {
+    "title": "How it works",
+    "subtitle": "طريقة العمل",
+    "steps": {
+      "createAccount": {
+        "title": "Create account",
+        "description": "Sign up free in English or Arabic to access dashboards."
+      },
+      "completeProfile": {
+        "title": "Complete profile",
+        "description": "Organizations upload licenses, companies add profiles before posting."
+      },
+      "postAndApply": {
+        "title": "Post & apply",
+        "description": "Post Syrian tenders or jobs, and apply securely with zero fees."
+      }
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "Welcome Back",
+      "description": "Sign in to access your dashboard",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign In",
+      "subtext": "Don't have an account?",
+      "signup": "Sign up",
+      "sending": "Sending code...",
+      "sendingCta": "Email me a login code",
+      "signinLoading": "Signing in..."
+    },
+    "signUp": {
+      "title": "Create Account",
+      "description": "Join our platform to find opportunities",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "password": "Password",
+      "passwordHelp": "Use a strong password to secure your account.",
+      "accountType": "Account Type",
+      "accountTypePlaceholder": "Select account type",
+      "roles": {
+        "user": "Job Seeker / Individual",
+        "organization": "Organization (Post Tenders)",
+        "company": "Company (Post Jobs)"
+      },
+      "passwordRequirements": {
+        "length": "At least 10 characters",
+        "uppercase": "Contains an uppercase letter",
+        "lowercase": "Contains a lowercase letter",
+        "number": "Contains a number",
+        "symbol": "Contains a special character (!@#$%)"
+      },
+      "errors": {
+        "passwordInvalid": "Password does not meet the security requirements shown below.",
+        "generic": "An error occurred"
+      },
+      "submit": "Create Account",
+      "submitting": "Creating account...",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "steps": {
+        "personalInfo": "Personal Info",
+        "security": "Security",
+        "accountType": "Account Type",
+        "review": "Review",
+        "reviewTitle": "Review Your Information"
+      },
+      "buttons": {
+        "back": "Back",
+        "next": "Next"
+      },
+      "accountTypeHelp": "Choose the account type that matches your needs",
+      "termsAgreement": "By creating an account, you agree to our Terms of Service and Privacy Policy."
+    }
+  },
+  "Work": {
+    "subtitle": "How It Works",
+    "title": "Workflows for every role",
+    "description": "Jobs, tenders, and about content are viewable by everyone. Posting, applying, and dashboards remain gated behind secure login.",
+    "steps": {
+      "browse": {
+        "title": "1. Browse Public Content",
+        "description": "Explore Jobs, Tenders, and this Works page without an account. We keep marketing content public."
+      },
+      "createProfile": {
+        "title": "2. Create & Verify Profile",
+        "description": "Sign up to access dashboards. Organizations upload license info before posting tenders; companies fill in their company profile before posting jobs."
+      },
+      "postOrApply": {
+        "title": "3. Post or Apply",
+        "description": "Authenticated users can post tenders/jobs from dashboards. Applicants must log in to apply, ensuring private data stays protected."
+      }
+    },
+    "cta": {
+      "title": "Ready to explore?",
+      "description": "Browse public listings freely. When you want to apply or post, sign in to unlock personalized dashboards."
+    }
+  },
+  "Dashboard": {
+    "welcome": "Welcome back, {name}!",
+    "welcomeFallback": "Welcome back, User!",
+    "subtitle": "Manage your applications and discover new opportunities",
+    "stats": {
+      "jobApplications": "Job Applications",
+      "tenderApplications": "Tender Applications",
+      "profile": "Profile",
+      "account": "Account",
+      "totalApplicationsSubmitted": "Total applications submitted",
+      "profileStatus": "Profile status",
+      "accountType": "Account type",
+      "complete": "Complete",
+      "incomplete": "Incomplete"
+    },
+    "roles": {
+      "user": "Job Seeker",
+      "organization": "Organization",
+      "company": "Company",
+      "admin": "Administrator"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "description": "Explore opportunities and manage your profile",
+      "browseJobs": "Browse Jobs",
+      "browseTenders": "Browse Tenders",
+      "editProfile": "Edit Profile"
+    },
+    "myApplications": {
+      "title": "My Applications",
+      "description": "View and manage your applications",
+      "jobApplications": "Job Applications",
+      "tenderApplications": "Tender Applications"
+    }
+  },
+  "CompanyDashboard": {
+    "title": "Company Dashboard",
+    "stats": {
+      "totalJobs": "Total Jobs",
+      "openJobs": "Open Jobs",
+      "applications": "Applications",
+      "totalViews": "Total Views",
+      "allJobsPosted": "All jobs posted",
+      "currentlyAccepting": "Currently accepting applications",
+      "totalReceived": "Total applications received",
+      "jobViews": "Job views"
+    },
+    "approval": {
+      "pendingTitle": "Company pending approval",
+      "pendingDescription": "Our team is reviewing your company profile. You'll be able to post jobs once approved. Update any missing details in",
+      "pendingDescriptionLink": "your company profile",
+      "awaitingTitle": "Awaiting approval",
+      "awaitingDescription": "We're reviewing your company profile. You'll be able to publish jobs as soon as it's approved.",
+      "pendingApprovalTooltip": "Pending admin approval",
+      "postJobTooltip": "Post a new job",
+      "pendingApprovalTooltipShort": "Pending approval",
+      "createJobTooltip": "Create a job"
+    },
+    "actions": {
+      "postNewJob": "Post New Job",
+      "quickActionsTitle": "Quick Actions",
+      "quickActionsDescription": "Manage your company and job postings",
+      "postNewJobAction": "Post New Job",
+      "manageJobs": "Manage Jobs",
+      "editCompanyProfile": "Edit Company Profile",
+      "applicationsTitle": "Applications",
+      "applicationsDescription": "Review applications from candidates",
+      "viewAllApplications": "View All Applications"
+    },
+    "backToDashboard": "Back to Dashboard"
+  },
+  "CompanyProfile": {
+    "title": "Company Profile",
+    "subtitle": "Update your company information"
+  },
+  "Profile": {
+    "title": "Edit Profile",
+    "subtitle": "Update your personal information"
+  },
+  "ProfileForm": {
+    "title": "Personal Information",
+    "description": "Update your profile details",
+    "fields": {
+      "fullName": "Full Name",
+      "phone": "Phone Number",
+      "bio": "Bio",
+      "accountType": "Account Type"
+    },
+    "placeholders": {
+      "fullName": "John Doe",
+      "phone": "+963 XXX XXX XXX",
+      "bio": "Tell us about yourself..."
+    },
+    "success": "Profile updated successfully!",
+    "errors": {
+      "generic": "An error occurred"
+    },
+    "buttons": {
+      "saving": "Saving...",
+      "saveChanges": "Save Changes"
+    }
+  },
+  "CompanyProfileForm": {
+    "title": "Company Information",
+    "description": "Update your company details",
+    "fields": {
+      "name": "Company Name *",
+      "namePlaceholder": "My Company",
+      "description": "Description",
+      "descriptionPlaceholder": "Tell us about your company...",
+      "website": "Website",
+      "websitePlaceholder": "https://example.com",
+      "location": "Location",
+      "locationPlaceholder": "Damascus, Syria",
+      "industry": "Industry",
+      "industryPlaceholder": "e.g., Technology, Finance, Healthcare",
+      "size": "Company Size",
+      "sizePlaceholder": "e.g., 1-10, 11-50, 51-200, 200+"
+    },
+    "success": "Company profile updated successfully!",
+    "errors": {
+      "generic": "An error occurred"
+    },
+    "buttons": {
+      "saving": "Saving...",
+      "saveChanges": "Save Changes"
+    }
+  },
+  "CompanyJobs": {
+    "manageTitle": "Manage Jobs",
+    "manageSubtitle": "View and manage all your job postings",
+    "postNewJob": "Post New Job",
+    "backToJobs": "Back to Jobs",
+    "backToDashboard": "Back to Dashboard",
+    "emptyState": {
+      "title": "You haven't posted any jobs yet",
+      "cta": "Post Your First Job"
+    },
+    "jobCard": {
+      "posted": "Posted",
+      "views": "views",
+      "applications": "applications",
+      "edit": "Edit",
+      "view": "View"
+    },
+    "status": {
+      "open": "open",
+      "closed": "closed",
+      "draft": "draft"
+    }
+  },
+  "CompanyJobNew": {
+    "title": "Post New Job",
+    "subtitle": "Create a new job opening"
+  },
+  "JobForm": {
+    "badge": {
+      "edit": "Edit Job",
+      "new": "Job Details"
+    },
+    "title": "Create a standout job post",
+    "description": "Fill in the information about the job opening",
+    "freePostsRemaining": "Free job posts remaining: {remaining} / {limit}",
+    "freePostsAvailable": "Complimentary job slots are available. Publishing another job will use one of your free posts.",
+    "freePostsUsed": "You have used your complimentary job slots. Contact support to enable additional postings.",
+    "freePostsInfo": "Every organization receives {total} free posts in total (2 tenders + 2 job postings). Tender slots are shown on the tender posting page.",
+    "fields": {
+      "title": "Job Title *",
+      "titlePlaceholder": "e.g., Senior Software Engineer",
+      "description": "Description *",
+      "descriptionPlaceholder": "Describe the job role and responsibilities...",
+      "requirements": "Requirements",
+      "requirementsPlaceholder": "List the requirements and qualifications...",
+      "salaryMin": "Minimum Salary ($)",
+      "salaryMinPlaceholder": "50000",
+      "salaryMax": "Maximum Salary ($)",
+      "salaryMaxPlaceholder": "80000",
+      "employmentType": "Employment Type",
+      "experienceLevel": "Experience Level",
+      "location": "Location",
+      "locationPlaceholder": "e.g., Damascus, Syria",
+      "category": "Category",
+      "categoryPlaceholder": "e.g., Engineering, Marketing, Sales",
+      "status": "Status *"
+    },
+    "employmentTypes": {
+      "fullTime": "Full-time",
+      "partTime": "Part-time",
+      "contract": "Contract",
+      "freelance": "Freelance",
+      "internship": "Internship"
+    },
+    "experienceLevels": {
+      "entry": "Entry-level",
+      "mid": "Mid-level",
+      "senior": "Senior",
+      "lead": "Lead",
+      "executive": "Executive"
+    },
+    "status": {
+      "draft": "Draft",
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "errors": {
+      "noFreePosts": "You have used all complimentary job postings. Please reach out to our team to unlock additional slots.",
+      "generic": "An error occurred"
+    },
+    "buttons": {
+      "saving": "Saving...",
+      "updateJob": "Update Job",
+      "postJob": "Post Job",
+      "cancel": "Cancel"
+    }
+  },
+  "CompanyJobDetail": {
+    "backToJobs": "Back to Jobs",
+    "posted": "Posted",
+    "views": "views",
+    "description": "Description",
+    "requirements": "Requirements",
+    "category": "Category",
+    "actions": {
+      "title": "Actions",
+      "description": "Manage this posting",
+      "editJob": "Edit Job",
+      "viewPublicPosting": "View Public Posting"
+    },
+    "performance": {
+      "title": "Performance",
+      "applications": "Applications",
+      "views": "Views",
+      "lastUpdated": "Last updated"
+    }
+  },
+  "CompanyApplications": {
+    "title": "Job Applications",
+    "subtitle": "Review applications from candidates",
+    "anonymous": "Anonymous",
+    "applied": "Applied",
+    "hasCoverLetter": "Has cover letter",
+    "hasResume": "Has resume",
+    "viewJob": "View Job",
+    "noApplications": "No applications received yet",
+    "manageJobs": "Manage Jobs",
+    "status": {
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "rejected": "Rejected"
+    }
+  },
+  "BrowseJobs": {
+    "title": "Browse Jobs",
+    "subtitle": "Discover your next career opportunity",
+    "searchPlaceholder": "Search jobs by title or description...",
+    "searchButton": "Search",
+    "company": "Company",
+    "viewDetails": "View Details",
+    "noJobsFound": "No jobs found. Try adjusting your search.",
+    "posted": "Posted",
+    "fullTime": "Full-time"
+  },
+  "JobDetail": {
+    "backToJobs": "Back to Jobs",
+    "company": "Company",
+    "posted": "Posted",
+    "fullTime": "Full-time",
+    "jobDescription": "Job Description",
+    "requirements": "Requirements",
+    "category": "Category",
+    "applyForJob": "Apply for this Job",
+    "signInToApply": "Sign in to apply for this job",
+    "signIn": "Sign In",
+    "alreadyApplied": "You have already applied for this job",
+    "viewApplications": "View Applications",
+    "applyNow": "Apply Now",
+    "reportAd": "Report this ad",
+    "aboutCompany": "About the Company",
+    "visitWebsite": "Visit Website"
+  },
+  "BrowseTenders": {
+    "title": "Browse Tenders",
+    "subtitle": "Find tender opportunities from organizations",
+    "searchPlaceholder": "Search tenders by title or description...",
+    "searchButton": "Search",
+    "organization": "Organization",
+    "deadline": "Deadline",
+    "viewDetails": "View Details",
+    "noTendersFound": "No tenders found. Try adjusting your search.",
+    "posted": "Posted"
+  },
+  "TenderDetail": {
+    "backToTenders": "Back to Tenders",
+    "organization": "Organization",
+    "deadline": "Deadline",
+    "posted": "Posted",
+    "tenderDescription": "Tender Description",
+    "requirements": "Requirements",
+    "category": "Category",
+    "applyForTender": "Apply for this Tender",
+    "signInToApply": "Sign in to apply for this tender",
+    "signIn": "Sign In",
+    "alreadyApplied": "You have already applied for this tender",
+    "viewApplications": "View Applications",
+    "applyNow": "Apply Now",
+    "reportAd": "Report this ad",
+    "aboutOrganization": "About the Organization",
+    "visitWebsite": "Visit Website"
+  },
+  "About": {
+    "badge": "About RT-SYR",
+    "title": "Connecting opportunity across Syria",
+    "subtitle": "We are a Syrian-focused hiring and tenders platform that bridges organizations, companies, and applicants through verified listings, bilingual experiences, and zero applicant fees. #SyrianTalent #SyrianWork",
+    "milestones": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "Connect Syrian talent with reputable company jobs and authentic tender opportunities—without fees or paywalls."
+      },
+      "safeAccess": {
+        "title": "Safe, Transparent Access",
+        "description": "We verify organizations before they post tenders and never charge applicants. Suspicious activity can be reported from every listing."
+      },
+      "builtForAll": {
+        "title": "Built for All Roles",
+        "description": "Job seekers browse roles, organizations share tenders, and companies hire talent under one collaborative platform."
+      }
+    },
+    "proudlyServing": {
+      "title": "Proudly serving Syria",
+      "description": "We highlight Syrian organizations, NGOs, and companies so professionals can stay, work, and grow within Syria. Every listing is reviewed with Syria's regulatory environment in mind, and our bilingual (English + Arabic) UX ensures local teams collaborate seamlessly with global partners."
+    },
+    "whatGuidesUs": {
+      "title": "What guides us",
+      "fairAccess": "Fair access: no applicant fees, bilingual support (English & Arabic), and RTL-friendly designs.",
+      "trustTransparency": "Trust & transparency: organizations must complete profiles and provide licenses before posting tenders.",
+      "security": "Security: Supabase policies protect data, and suspicious listings can be reported instantly."
+    }
+  },
+  "AdminDashboard": {
+    "title": "Admin Dashboard",
+    "subtitle": "Platform overview and analytics",
+    "stats": {
+      "totalUsers": {
+        "title": "Total Users",
+        "description": "Registered users"
+      },
+      "organizations": {
+        "title": "Organizations",
+        "description": "Active organizations"
+      },
+      "companies": {
+        "title": "Companies",
+        "description": "Active companies"
+      },
+      "totalEvents": {
+        "title": "Total Events",
+        "description": "Analytics events"
+      },
+      "newReports": {
+        "title": "New Reports",
+        "description": "Flagged listings awaiting review",
+        "reviewReports": "Review reports →"
+      },
+      "jobs": {
+        "title": "Jobs",
+        "description": "Total job postings",
+        "applications": "applications"
+      },
+      "tenders": {
+        "title": "Tenders",
+        "description": "Total tender postings",
+        "applications": "applications"
+      }
+    },
+    "recentJobs": {
+      "title": "Recent Jobs",
+      "description": "Latest job postings on the platform",
+      "noJobs": "No jobs posted yet",
+      "company": "Company"
+    },
+    "recentTenders": {
+      "title": "Recent Tenders",
+      "description": "Latest tender postings on the platform",
+      "noTenders": "No tenders posted yet",
+      "organization": "Organization"
+    },
+    "pendingOrganizations": {
+      "title": "Pending Organizations",
+      "description": "Profiles waiting for approval",
+      "noPending": "No pending organizations",
+      "unknownOwner": "Unknown owner"
+    },
+    "pendingCompanies": {
+      "title": "Pending Companies",
+      "description": "Job posting accounts awaiting review",
+      "noPending": "No pending companies",
+      "unknownOwner": "Unknown owner"
+    }
+  },
+  "AdminReports": {
+    "title": "Reported Listings",
+    "subtitle": "Review suspicious jobs or tenders flagged by users",
+    "backToDashboard": "Back to admin dashboard",
+    "noReports": "No reports yet.",
+    "report": "Report",
+    "submitted": "Submitted",
+    "by": "by",
+    "anonymous": "Anonymous",
+    "listingType": "Listing type:",
+    "unknown": "unknown",
+    "viewListing": "View listing",
+    "details": "Details",
+    "contact": "Contact:",
+    "status": {
+      "new": "New",
+      "inReview": "In review",
+      "resolved": "Resolved"
+    }
+  },
+  "ApproveEntityButton": {
+    "approving": "Approving...",
+    "approve": "Approve"
+  },
+  "ReportStatusForm": {
+    "label": "Moderation status",
+    "selectPlaceholder": "Select status",
+    "status": {
+      "new": "New",
+      "inReview": "In Review",
+      "resolved": "Resolved"
+    },
+    "error": "Unable to update status"
+  },
+  "OrganizationDashboard": {
+    "title": "Organization Dashboard",
+    "subtitle": "Need to post a job instead? Switch to the company dashboard. The tender form below is tailored for organization requirements.",
+    "alerts": {
+      "profileIncomplete": {
+        "title": "Profile Incomplete",
+        "description": "Complete your organization profile (license number, license copy, and work sectors) to start posting tenders.",
+        "completeProfile": "Complete Profile"
+      },
+      "pendingApproval": {
+        "title": "Pending Approval",
+        "description": "Your organization profile is complete and under review. You will be able to post tenders once approved by our team."
+      },
+      "accountApproved": {
+        "title": "Account Approved",
+        "description": "Your organization is approved. You can now post tenders and manage your organization."
+      }
+    },
+    "stats": {
+      "totalTenders": {
+        "title": "Total Tenders",
+        "description": "All tenders posted"
+      },
+      "openTenders": {
+        "title": "Open Tenders",
+        "description": "Currently accepting applications"
+      },
+      "applications": {
+        "title": "Applications",
+        "description": "Total applications received"
+      },
+      "totalViews": {
+        "title": "Total Views",
+        "description": "Tender views"
+      }
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "description": "Manage your organization and tenders",
+      "postNewTender": "Post New Tender",
+      "manageTenders": "Manage Tenders",
+      "editProfile": "Edit Organization Profile"
+    },
+    "applications": {
+      "title": "Applications",
+      "description": "Review applications from candidates",
+      "viewAll": "View All Applications"
+    },
+    "postTenderTooltips": {
+      "completeProfile": "Complete your profile to post tenders",
+      "pendingApproval": "Pending approval",
+      "createTender": "Create a new tender"
+    }
+  },
+  "OrganizationProfile": {
+    "backToDashboard": "Back to Dashboard",
+    "title": "Organization Profile",
+    "subtitle": "Update your organization information"
+  },
+  "OrganizationProfileForm": {
+    "alerts": {
+      "incomplete": {
+        "title": "Complete Your Organization Profile",
+        "description": "To post tenders, you must complete your organization profile by providing: license number, license copy, and at least one work sector. Once complete, your profile will be reviewed for approval."
+      },
+      "complete": {
+        "title": "Profile Complete",
+        "description": "Your organization profile is complete. You can now post tenders once your account is approved by our team."
+      }
+    },
+    "card": {
+      "title": "Organization Information",
+      "description": "Update your organization details. Required fields must be completed before you can post tenders."
+    },
+    "fields": {
+      "name": "Organization Name *",
+      "description": "Description",
+      "website": "Website",
+      "location": "Location",
+      "industry": "Industry",
+      "licenseNumber": "License Number *",
+      "licenseNumberHint": "(Required for posting tenders)",
+      "licenseFile": "License Copy *",
+      "licenseFileHint": "(PDF or Image, max 5MB)",
+      "licenseFileUploaded": "License file already uploaded",
+      "view": "View",
+      "workSectors": "Work Sectors *",
+      "workSectorsHint": "(Select at least one)",
+      "selected": "Selected:"
+    },
+    "placeholders": {
+      "name": "My Organization",
+      "description": "Tell us about your organization...",
+      "website": "https://example.com",
+      "location": "Damascus, Syria",
+      "industry": "e.g., Construction, Healthcare, Technology",
+      "licenseNumber": "Enter your organization license number"
+    },
+    "errors": {
+      "fileSize": "File size must be less than 5MB",
+      "fileType": "File must be an image or PDF",
+      "generic": "An error occurred"
+    },
+    "success": "Organization profile updated successfully!",
+    "buttons": {
+      "saving": "Saving...",
+      "saveChanges": "Save Changes"
+    }
+  },
+  "OrganizationSecondaryAccounts": {
+    "title": "Secondary Accounts",
+    "description": "Invite additional team members to manage your organization. They will have access to post tenders and manage applications.",
+    "fields": {
+      "email": "Email Address",
+      "emailPlaceholder": "colleague@example.com"
+    },
+    "buttons": {
+      "sending": "Sending...",
+      "sendInvitation": "Send Invitation"
+    },
+    "alerts": {
+      "error": "An error occurred",
+      "success": {
+        "title": "Invitation sent successfully!",
+        "description": "The user will receive an email with instructions to join your organization."
+      }
+    },
+    "pendingInvitations": "Pending Invitations",
+    "status": {
+      "pending": "pending",
+      "accepted": "accepted",
+      "rejected": "rejected"
+    }
+  },
+  "OrganizationPermissionsGuide": {
+    "title": "What Your Organization Can See",
+    "description": "Understanding your organization's capabilities and permissions",
+    "postTenders": {
+      "title": "Post Tenders",
+      "description": "Create and manage tender opportunities. You can publish up to 2 free tenders, with additional slots available upon request."
+    },
+    "manageApplications": {
+      "title": "Manage Applications",
+      "description": "Review applications from candidates, accept or reject them, and communicate with applicants."
+    },
+    "viewAnalytics": {
+      "title": "View Analytics",
+      "description": "Track views, applications, and engagement metrics for your tenders."
+    },
+    "teamManagement": {
+      "title": "Team Management",
+      "description": "Invite secondary accounts to help manage your organization. All team members can post tenders and manage applications."
+    },
+    "note": "Note: Your organization profile must be complete (license number, license copy, and work sectors) and approved by our team before you can post tenders. This ensures quality and authenticity of opportunities on our platform."
+  },
+  "OrganizationTenders": {
+    "backToDashboard": "Back to Dashboard",
+    "manageTitle": "Manage Tenders",
+    "manageSubtitle": "View and manage all your tenders",
+    "noTendersYet": "You haven't posted any tenders yet",
+    "postYourFirstTender": "Post Your First Tender",
+    "tenderCard": {
+      "posted": "Posted",
+      "views": "views",
+      "applications": "applications",
+      "edit": "Edit",
+      "view": "View"
+    },
+    "status": {
+      "open": "open",
+      "closed": "closed",
+      "draft": "draft"
+    }
+  },
+  "OrganizationTenderNew": {
+    "backToTenders": "Back to Tenders",
+    "title": "Post New Tender",
+    "subtitle": "Create a new tender opportunity"
+  },
+  "TenderForm": {
+    "badge": {
+      "edit": "Edit",
+      "new": "New"
+    },
+    "title": {
+      "edit": "Edit Tender",
+      "new": "Tender Details"
+    },
+    "description": "Fill in the information about your tender. Budget ranges are no longer required and are hidden from listings.",
+    "freePostsRemaining": "Free tender posts remaining: {remaining} / {limit}",
+    "freePostsAvailable": "Complimentary tender slots are still available. Publishing this tender will use one of your free posts.",
+    "freePostsUsed": "You have used your complimentary tender slots. Contact support to extend your tender publishing capacity.",
+    "freePostsInfo": "Every organization receives {total} free posts in total (2 tenders + 2 job postings). Job slot availability is shown on the job posting page.",
+    "fields": {
+      "title": "Tender Title *",
+      "description": "Description *",
+      "requirements": "Requirements",
+      "location": "Location",
+      "deadline": "Deadline",
+      "category": "Category",
+      "status": "Status *"
+    },
+    "placeholders": {
+      "title": "e.g., Construction Project Management",
+      "description": "Describe the tender opportunity...",
+      "requirements": "List the requirements for applicants...",
+      "location": "e.g., Damascus, Syria",
+      "category": "e.g., Construction, IT, Healthcare"
+    },
+    "status": {
+      "draft": "Draft",
+      "open": "Open",
+      "closed": "Closed"
+    },
+    "errors": {
+      "noFreePosts": "You have used all complimentary tender posts. Please contact our team to unlock additional tender announcements.",
+      "generic": "An error occurred"
+    },
+    "buttons": {
+      "saving": "Saving...",
+      "updateTender": "Update Tender",
+      "postTender": "Post Tender",
+      "cancel": "Cancel"
+    }
+  },
+  "PostTenderCTA": {
+    "defaultText": "Post New Tender"
+  },
+  "Footer": {
+    "jobSeekers": "For Job Seekers",
+    "employers": "For Employers",
+    "company": "Company",
+    "brandDescription": "Connecting talent with opportunities across Syria and beyond. Find your next career move or discover top talent.",
+    "links": {
+      "work": "Work",
+      "jobs": "Browse Jobs",
+      "tenders": "Browse Tenders",
+      "dashboard": "Your Dashboard",
+      "postJob": "Post a Job",
+      "postTender": "Post a Tender",
+      "manage": "Manage Listings",
+      "about": "About Us",
+      "contact": "Contact",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "support": "Support"
+    },
+    "copyright": "All rights reserved."
+  }
+}
+

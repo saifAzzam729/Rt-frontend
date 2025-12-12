@@ -1,0 +1,866 @@
+{
+  "Common": {
+    "brand": "RT-SYR",
+    "tagline": "توظيف ومناقصات",
+    "actions": {
+      "signIn": "تسجيل الدخول",
+      "signOut": "تسجيل الخروج",
+      "getStarted": "ابدأ الآن",
+      "createAccount": "أنشئ حساباً مجاناً",
+      "browseJobs": "تصفّح الوظائف",
+      "browseTenders": "تصفّح المناقصات",
+      "report": "أبلغ عن نشاط مريب",
+      "language": {
+        "en": "English",
+        "ar": "العربية"
+      }
+    }
+  },
+  "Navigation": {
+    "work": "كيف يعمل",
+    "jobs": "الوظائف",
+    "tenders": "المناقصات",
+    "about": "من نحن",
+    "dashboard": "لوحة التحكم"
+  },
+  "Home": {
+    "hero": {
+      "typewriter": {
+        "connect": "نربط",
+        "talent": "الكفاءات",
+        "with": "مع",
+        "opportunities": "الفرص"
+      },
+      "description": "المنصة الرائدة في سوريا للباحثين عن عمل، وللمنظمات التي تنشر المناقصات، وللشركات التي تبحث عن أفضل المواهب. اعثر على فرصتك التالية أو اكتشف المرشح المثالي دون مغادرة البلاد.",
+      "hashtags": "#وظائف_سوريا #مناقصات_سوريا",
+      "primaryCta": "أنشئ حساباً مجاناً",
+      "secondaryCta": "تصفّح الوظائف"
+    },
+    "features": {
+      "heading": "كل ما تحتاجه",
+      "description": "منصة متكاملة مخصّصة للباحثين عن العمل والمنظمات والشركات",
+      "cards": {
+        "jobSeekers": {
+          "title": "للباحثين عن عمل",
+          "body": "تصفّح آلاف الوظائف والمناقصات، وقدّم بسهولة، وتابع طلباتك في مكان واحد.",
+          "cta": "استكشف الوظائف"
+        },
+        "organizations": {
+          "title": "للمنظمات",
+          "body": "انشر المناقصات ووصل إلى المرشحين المؤهلين. أدِر الطلبات وابحث عن الشركاء المناسبين لمشاريعك.",
+          "cta": "انشر المناقصات"
+        },
+        "companies": {
+          "title": "للشركات",
+          "body": "انشر الوظائف واكتشف أفضل المواهب. بسّط عملية التوظيف عبر لوحة تحكم سلسة.",
+          "cta": "وظّف المواهب"
+        }
+      }
+    },
+    "stats": {
+      "opportunities": "فرص نشطة",
+      "users": "مستخدمون مسجّلون",
+      "companies": "شركات ومنظمات"
+    },
+    "cta": {
+      "title": "جاهز للبدء؟",
+      "body": "انضم إلى آلاف المهنيين والمنظمات والشركات التي تستخدم منصتنا للاتصال والنمو.",
+      "button": "ابدأ رحلتك اليوم"
+    }
+  },
+  "BrowseSelector": {
+    "title": "تصفّح الفرص",
+    "choose": "اختر",
+    "jobsDescription": "اكتشف أدوار الشركات في مختلف أنحاء سوريا",
+    "tendersDescription": "اطلع على المناقصات الموثوقة للمنظمات",
+    "browse": "تصفّح"
+  },
+  "FeeDisclaimer": {
+    "title": "لن نفرض أي رسوم على المتقدمين للوظائف أو المناقصات.",
+    "description": "لا تفرض منصتنا رسوماً على المتقدمين. يرجى الإبلاغ فوراً عن أي نشاط مريب.",
+    "cta": "أبلغ عن نشاط مريب →"
+  },
+  "HowItWorks": {
+    "title": "طريقة العمل",
+    "subtitle": "How it works",
+    "steps": {
+      "createAccount": {
+        "title": "إنشاء حساب",
+        "description": "سجّل مجانًا باللغتين العربية أو الإنجليزية للوصول إلى لوحة التحكم."
+      },
+      "completeProfile": {
+        "title": "أكمل ملفك",
+        "description": "المنظمات ترفع التراخيص والشركات تُحدّث ملفاتها قبل النشر."
+      },
+      "postAndApply": {
+        "title": "انشر وقدّم",
+        "description": "انشر المناقصات أو الوظائف في سوريا وقدّم بأمان دون أي رسوم."
+      }
+    }
+  },
+  "Auth": {
+    "login": {
+      "title": "مرحباً بعودتك",
+      "description": "سجّل الدخول للوصول إلى لوحة التحكم",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "submit": "تسجيل الدخول",
+      "subtext": "ليس لديك حساب؟",
+      "signup": "سجّل الآن",
+      "sending": "جاري الإرسال...",
+      "sendingCta": "أرسل لي رمز الدخول",
+      "signinLoading": "جاري تسجيل الدخول..."
+    },
+    "signUp": {
+      "title": "إنشاء حساب",
+      "description": "انضم إلى منصتنا للعثور على الفرص",
+      "fullName": "الاسم الكامل",
+      "fullNamePlaceholder": "أحمد محمد",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "your@email.com",
+      "password": "كلمة المرور",
+      "passwordHelp": "استخدم كلمة مرور قوية لتأمين حسابك.",
+      "accountType": "نوع الحساب",
+      "accountTypePlaceholder": "اختر نوع الحساب",
+      "roles": {
+        "user": "باحث عن عمل / فرد",
+        "organization": "منظمة (نشر المناقصات)",
+        "company": "شركة (نشر الوظائف)"
+      },
+      "passwordRequirements": {
+        "length": "10 أحرف على الأقل",
+        "uppercase": "يحتوي على حرف كبير",
+        "lowercase": "يحتوي على حرف صغير",
+        "number": "يحتوي على رقم",
+        "symbol": "يحتوي على رمز خاص (!@#$%)"
+      },
+      "errors": {
+        "passwordInvalid": "كلمة المرور لا تلبي متطلبات الأمان الموضحة أدناه.",
+        "generic": "حدث خطأ"
+      },
+      "submit": "إنشاء حساب",
+      "submitting": "جاري إنشاء الحساب...",
+      "alreadyHaveAccount": "لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول",
+      "steps": {
+        "personalInfo": "المعلومات الشخصية",
+        "security": "الأمان",
+        "accountType": "نوع الحساب",
+        "review": "المراجعة",
+        "reviewTitle": "مراجعة معلوماتك"
+      },
+      "buttons": {
+        "back": "رجوع",
+        "next": "التالي"
+      },
+      "accountTypeHelp": "اختر نوع الحساب الذي يناسب احتياجاتك",
+      "termsAgreement": "بإنشاء حساب، أنت توافق على شروط الخدمة وسياسة الخصوصية الخاصة بنا."
+    }
+  },
+  "Work": {
+    "subtitle": "طريقة العمل",
+    "title": "سير العمل لكل دور",
+    "description": "الوظائف والمناقصات ومحتوى من نحن متاحة للجميع. النشر والتقديم ولوحات التحكم محمية خلف تسجيل دخول آمن.",
+    "steps": {
+      "browse": {
+        "title": "1. تصفّح المحتوى العام",
+        "description": "استكشف الوظائف والمناقصات وصفحة العمل هذه دون حساب. نحتفظ بالمحتوى التسويقي عاماً."
+      },
+      "createProfile": {
+        "title": "2. إنشاء والتحقق من الملف الشخصي",
+        "description": "سجّل للوصول إلى لوحات التحكم. ترفع المنظمات معلومات الترخيص قبل نشر المناقصات؛ تملأ الشركات ملف الشركة قبل نشر الوظائف."
+      },
+      "postOrApply": {
+        "title": "3. انشر أو قدّم",
+        "description": "يمكن للمستخدمين المصادق عليهم نشر المناقصات/الوظائف من لوحات التحكم. يجب على المتقدمين تسجيل الدخول للتقديم، مما يضمن حماية البيانات الخاصة."
+      }
+    },
+    "cta": {
+      "title": "جاهز للاستكشاف؟",
+      "description": "تصفّح القوائم العامة بحرية. عندما تريد التقديم أو النشر، سجّل الدخول لفتح لوحات التحكم المخصصة."
+    }
+  },
+  "Dashboard": {
+    "welcome": "مرحباً بعودتك، {name}!",
+    "welcomeFallback": "مرحباً بعودتك، مستخدم!",
+    "subtitle": "أدِر طلباتك واكتشف فرصاً جديدة",
+    "stats": {
+      "jobApplications": "طلبات الوظائف",
+      "tenderApplications": "طلبات المناقصات",
+      "profile": "الملف الشخصي",
+      "account": "الحساب",
+      "totalApplicationsSubmitted": "إجمالي الطلبات المقدمة",
+      "profileStatus": "حالة الملف الشخصي",
+      "accountType": "نوع الحساب",
+      "complete": "مكتمل",
+      "incomplete": "غير مكتمل"
+    },
+    "roles": {
+      "user": "باحث عن عمل",
+      "organization": "منظمة",
+      "company": "شركة",
+      "admin": "مدير"
+    },
+    "quickActions": {
+      "title": "إجراءات سريعة",
+      "description": "استكشف الفرص وأدِر ملفك الشخصي",
+      "browseJobs": "تصفّح الوظائف",
+      "browseTenders": "تصفّح المناقصات",
+      "editProfile": "تعديل الملف الشخصي"
+    },
+    "myApplications": {
+      "title": "طلباتي",
+      "description": "عرض وإدارة طلباتك",
+      "jobApplications": "طلبات الوظائف",
+      "tenderApplications": "طلبات المناقصات"
+    }
+  },
+  "CompanyDashboard": {
+    "title": "لوحة تحكم الشركة",
+    "stats": {
+      "totalJobs": "إجمالي الوظائف",
+      "openJobs": "الوظائف المفتوحة",
+      "applications": "الطلبات",
+      "totalViews": "إجمالي المشاهدات",
+      "allJobsPosted": "جميع الوظائف المنشورة",
+      "currentlyAccepting": "تقبل الطلبات حالياً",
+      "totalReceived": "إجمالي الطلبات المستلمة",
+      "jobViews": "مشاهدات الوظائف"
+    },
+    "approval": {
+      "pendingTitle": "الشركة في انتظار الموافقة",
+      "pendingDescription": "فريقنا يراجع ملف شركتك. ستتمكن من نشر الوظائف بعد الموافقة. حدّث أي تفاصيل ناقصة في",
+      "pendingDescriptionLink": "ملف شركتك",
+      "awaitingTitle": "في انتظار الموافقة",
+      "awaitingDescription": "نحن نراجع ملف شركتك. ستتمكن من نشر الوظائف بمجرد الموافقة عليه.",
+      "pendingApprovalTooltip": "في انتظار موافقة المدير",
+      "postJobTooltip": "نشر وظيفة جديدة",
+      "pendingApprovalTooltipShort": "في انتظار الموافقة",
+      "createJobTooltip": "إنشاء وظيفة"
+    },
+    "actions": {
+      "postNewJob": "نشر وظيفة جديدة",
+      "quickActionsTitle": "إجراءات سريعة",
+      "quickActionsDescription": "أدِر شركتك وإعلانات الوظائف",
+      "postNewJobAction": "نشر وظيفة جديدة",
+      "manageJobs": "إدارة الوظائف",
+      "editCompanyProfile": "تعديل ملف الشركة",
+      "applicationsTitle": "الطلبات",
+      "applicationsDescription": "مراجعة الطلبات من المرشحين",
+      "viewAllApplications": "عرض جميع الطلبات"
+    },
+    "backToDashboard": "العودة إلى لوحة التحكم"
+  },
+  "CompanyProfile": {
+    "title": "ملف الشركة",
+    "subtitle": "حدّث معلومات شركتك"
+  },
+  "Profile": {
+    "title": "تعديل الملف الشخصي",
+    "subtitle": "حدّث معلوماتك الشخصية"
+  },
+  "ProfileForm": {
+    "title": "المعلومات الشخصية",
+    "description": "حدّث تفاصيل ملفك الشخصي",
+    "fields": {
+      "fullName": "الاسم الكامل",
+      "phone": "رقم الهاتف",
+      "bio": "نبذة",
+      "accountType": "نوع الحساب"
+    },
+    "placeholders": {
+      "fullName": "أحمد محمد",
+      "phone": "+963 XXX XXX XXX",
+      "bio": "أخبرنا عن نفسك..."
+    },
+    "success": "تم تحديث الملف الشخصي بنجاح!",
+    "errors": {
+      "generic": "حدث خطأ"
+    },
+    "buttons": {
+      "saving": "جاري الحفظ...",
+      "saveChanges": "حفظ التغييرات"
+    }
+  },
+  "CompanyProfileForm": {
+    "title": "معلومات الشركة",
+    "description": "حدّث تفاصيل شركتك",
+    "fields": {
+      "name": "اسم الشركة *",
+      "namePlaceholder": "شركتي",
+      "description": "الوصف",
+      "descriptionPlaceholder": "أخبرنا عن شركتك...",
+      "website": "الموقع الإلكتروني",
+      "websitePlaceholder": "https://example.com",
+      "location": "الموقع",
+      "locationPlaceholder": "دمشق، سوريا",
+      "industry": "القطاع",
+      "industryPlaceholder": "مثال: التكنولوجيا، المالية، الرعاية الصحية",
+      "size": "حجم الشركة",
+      "sizePlaceholder": "مثال: 1-10، 11-50، 51-200، 200+"
+    },
+    "success": "تم تحديث ملف الشركة بنجاح!",
+    "errors": {
+      "generic": "حدث خطأ"
+    },
+    "buttons": {
+      "saving": "جاري الحفظ...",
+      "saveChanges": "حفظ التغييرات"
+    }
+  },
+  "CompanyJobs": {
+    "manageTitle": "إدارة الوظائف",
+    "manageSubtitle": "عرض وإدارة جميع إعلانات الوظائف الخاصة بك",
+    "postNewJob": "نشر وظيفة جديدة",
+    "backToJobs": "العودة إلى الوظائف",
+    "backToDashboard": "العودة إلى لوحة التحكم",
+    "emptyState": {
+      "title": "لم تنشر أي وظائف بعد",
+      "cta": "انشر أول وظيفة"
+    },
+    "jobCard": {
+      "posted": "نُشر",
+      "views": "مشاهدات",
+      "applications": "طلبات",
+      "edit": "تعديل",
+      "view": "عرض"
+    },
+    "status": {
+      "open": "مفتوح",
+      "closed": "مغلق",
+      "draft": "مسودة"
+    }
+  },
+  "CompanyJobNew": {
+    "title": "نشر وظيفة جديدة",
+    "subtitle": "إنشاء فرصة عمل جديدة"
+  },
+  "JobForm": {
+    "badge": {
+      "edit": "تعديل الوظيفة",
+      "new": "تفاصيل الوظيفة"
+    },
+    "title": "أنشئ إعلان وظيفة مميز",
+    "description": "املأ معلومات فرصة العمل",
+    "freePostsRemaining": "الوظائف المجانية المتبقية: {remaining} / {limit}",
+    "freePostsAvailable": "الوظائف المجانية متاحة. نشر وظيفة أخرى سيستخدم إحدى الوظائف المجانية الخاصة بك.",
+    "freePostsUsed": "لقد استخدمت الوظائف المجانية الخاصة بك. اتصل بالدعم لتمكين المزيد من الإعلانات.",
+    "freePostsInfo": "تحصل كل منظمة على {total} إعلان مجاني في المجموع (2 مناقصات + 2 إعلانات وظائف). تظهر فتحات المناقصات في صفحة نشر المناقصات.",
+    "fields": {
+      "title": "عنوان الوظيفة *",
+      "titlePlaceholder": "مثال: مهندس برمجيات كبير",
+      "description": "الوصف *",
+      "descriptionPlaceholder": "اوصف دور الوظيفة والمسؤوليات...",
+      "requirements": "المتطلبات",
+      "requirementsPlaceholder": "اذكر المتطلبات والمؤهلات...",
+      "salaryMin": "الراتب الأدنى ($)",
+      "salaryMinPlaceholder": "50000",
+      "salaryMax": "الراتب الأقصى ($)",
+      "salaryMaxPlaceholder": "80000",
+      "employmentType": "نوع التوظيف",
+      "experienceLevel": "مستوى الخبرة",
+      "location": "الموقع",
+      "locationPlaceholder": "مثال: دمشق، سوريا",
+      "category": "الفئة",
+      "categoryPlaceholder": "مثال: هندسة، تسويق، مبيعات",
+      "status": "الحالة *"
+    },
+    "employmentTypes": {
+      "fullTime": "دوام كامل",
+      "partTime": "دوام جزئي",
+      "contract": "عقد",
+      "freelance": "عمل حر",
+      "internship": "تدريب"
+    },
+    "experienceLevels": {
+      "entry": "مبتدئ",
+      "mid": "متوسط",
+      "senior": "كبير",
+      "lead": "رئيسي",
+      "executive": "تنفيذي"
+    },
+    "status": {
+      "draft": "مسودة",
+      "open": "مفتوح",
+      "closed": "مغلق"
+    },
+    "errors": {
+      "noFreePosts": "لقد استخدمت جميع الإعلانات المجانية. يرجى التواصل مع فريقنا لفتح المزيد من الفتحات.",
+      "generic": "حدث خطأ"
+    },
+    "buttons": {
+      "saving": "جاري الحفظ...",
+      "updateJob": "تحديث الوظيفة",
+      "postJob": "نشر الوظيفة",
+      "cancel": "إلغاء"
+    }
+  },
+  "CompanyJobDetail": {
+    "backToJobs": "العودة إلى الوظائف",
+    "posted": "نُشر",
+    "views": "مشاهدات",
+    "description": "الوصف",
+    "requirements": "المتطلبات",
+    "category": "الفئة",
+    "actions": {
+      "title": "الإجراءات",
+      "description": "إدارة هذا الإعلان",
+      "editJob": "تعديل الوظيفة",
+      "viewPublicPosting": "عرض الإعلان العام"
+    },
+    "performance": {
+      "title": "الأداء",
+      "applications": "الطلبات",
+      "views": "المشاهدات",
+      "lastUpdated": "آخر تحديث"
+    }
+  },
+  "CompanyApplications": {
+    "title": "طلبات الوظائف",
+    "subtitle": "مراجعة الطلبات من المرشحين",
+    "anonymous": "مجهول",
+    "applied": "تم التقديم",
+    "hasCoverLetter": "يحتوي على خطاب تغطية",
+    "hasResume": "يحتوي على سيرة ذاتية",
+    "viewJob": "عرض الوظيفة",
+    "noApplications": "لم يتم استلام أي طلبات بعد",
+    "manageJobs": "إدارة الوظائف",
+    "status": {
+      "pending": "قيد الانتظار",
+      "accepted": "مقبول",
+      "rejected": "مرفوض"
+    }
+  },
+  "BrowseJobs": {
+    "title": "تصفّح الوظائف",
+    "subtitle": "اكتشف فرصتك المهنية القادمة",
+    "searchPlaceholder": "ابحث عن الوظائف بالعنوان أو الوصف...",
+    "searchButton": "بحث",
+    "company": "شركة",
+    "viewDetails": "عرض التفاصيل",
+    "noJobsFound": "لم يتم العثور على وظائف. حاول تعديل بحثك.",
+    "posted": "نُشر",
+    "fullTime": "دوام كامل"
+  },
+  "JobDetail": {
+    "backToJobs": "العودة إلى الوظائف",
+    "company": "شركة",
+    "posted": "نُشر",
+    "fullTime": "دوام كامل",
+    "jobDescription": "وصف الوظيفة",
+    "requirements": "المتطلبات",
+    "category": "الفئة",
+    "applyForJob": "التقديم على هذه الوظيفة",
+    "signInToApply": "قم بتسجيل الدخول للتقديم على هذه الوظيفة",
+    "signIn": "تسجيل الدخول",
+    "alreadyApplied": "لقد تقدمت بالفعل على هذه الوظيفة",
+    "viewApplications": "عرض الطلبات",
+    "applyNow": "تقديم الآن",
+    "reportAd": "الإبلاغ عن هذا الإعلان",
+    "aboutCompany": "عن الشركة",
+    "visitWebsite": "زيارة الموقع"
+  },
+  "BrowseTenders": {
+    "title": "تصفّح المناقصات",
+    "subtitle": "ابحث عن فرص المناقصات من المنظمات",
+    "searchPlaceholder": "ابحث عن المناقصات بالعنوان أو الوصف...",
+    "searchButton": "بحث",
+    "organization": "منظمة",
+    "deadline": "الموعد النهائي",
+    "viewDetails": "عرض التفاصيل",
+    "noTendersFound": "لم يتم العثور على مناقصات. حاول تعديل بحثك.",
+    "posted": "نُشر"
+  },
+  "TenderDetail": {
+    "backToTenders": "العودة إلى المناقصات",
+    "organization": "منظمة",
+    "deadline": "الموعد النهائي",
+    "posted": "نُشر",
+    "tenderDescription": "وصف المناقصة",
+    "requirements": "المتطلبات",
+    "category": "الفئة",
+    "applyForTender": "التقديم على هذه المناقصة",
+    "signInToApply": "قم بتسجيل الدخول للتقديم على هذه المناقصة",
+    "signIn": "تسجيل الدخول",
+    "alreadyApplied": "لقد تقدمت بالفعل على هذه المناقصة",
+    "viewApplications": "عرض الطلبات",
+    "applyNow": "تقديم الآن",
+    "reportAd": "الإبلاغ عن هذا الإعلان",
+    "aboutOrganization": "عن المنظمة",
+    "visitWebsite": "زيارة الموقع"
+  },
+  "About": {
+    "badge": "عن RT-SYR",
+    "title": "ربط الفرص عبر سوريا",
+    "subtitle": "نحن منصة توظيف ومناقصات تركز على سوريا تربط بين المنظمات والشركات والمتقدمين من خلال القوائم الم verified، التجارب ثنائية اللغة، وعدم وجود رسوم على المتقدمين. #الموهبة_السورية #العمل_السوري",
+    "milestones": {
+      "mission": {
+        "title": "مهمتنا",
+        "description": "ربط المواهب السورية بوظائف الشركات الموثوقة وفرص المناقصات الأصيلة—بدون رسوم أو جدران دفع."
+      },
+      "safeAccess": {
+        "title": "الوصول الآمن والشفاف",
+        "description": "نحن نتحقق من المنظمات قبل نشر المناقصات ولا نتقاضى رسومًا من المتقدمين أبدًا. يمكن الإبلاغ عن الأنشطة المشبوهة من كل قائمة."
+      },
+      "builtForAll": {
+        "title": "مبني لجميع الأدوار",
+        "description": "الباحثون عن عمل يتصفحون الأدوار، والمنظمات تشارك المناقصات، والشركات توظف المواهب على منصة تعاونية واحدة."
+      }
+    },
+    "proudlyServing": {
+      "title": "نخدم سوريا بفخر",
+      "description": "نبرز المنظمات السورية والمنظمات غير الحكومية والشركات حتى يتمكن المحترفون من البقاء والعمل والنمو داخل سوريا. يتم مراجعة كل قائمة مع مراعاة البيئة التنظيمية في سوريا، وتضمن تجربة المستخدم ثنائية اللغة (الإنجليزية + العربية) تعاون الفرق المحلية بسلاسة مع الشركاء العالميين."
+    },
+    "whatGuidesUs": {
+      "title": "ما يوجهنا",
+      "fairAccess": "الوصول العادل: لا توجد رسوم على المتقدمين، ودعم ثنائي اللغة (الإنجليزية والعربية)، وتصاميم صديقة لـ RTL.",
+      "trustTransparency": "الثقة والشفافية: يجب على المنظمات إكمال الملفات الشخصية وتقديم التراخيص قبل نشر المناقصات.",
+      "security": "الأمان: تحمي سياسات Supabase البيانات، ويمكن الإبلاغ عن القوائم المشبوهة على الفور."
+    }
+  },
+  "AdminDashboard": {
+    "title": "لوحة تحكم المدير",
+    "subtitle": "نظرة عامة على المنصة والتحليلات",
+    "stats": {
+      "totalUsers": {
+        "title": "إجمالي المستخدمين",
+        "description": "المستخدمون المسجلون"
+      },
+      "organizations": {
+        "title": "المنظمات",
+        "description": "المنظمات النشطة"
+      },
+      "companies": {
+        "title": "الشركات",
+        "description": "الشركات النشطة"
+      },
+      "totalEvents": {
+        "title": "إجمالي الأحداث",
+        "description": "أحداث التحليلات"
+      },
+      "newReports": {
+        "title": "تقارير جديدة",
+        "description": "القوائم المبلغ عنها في انتظار المراجعة",
+        "reviewReports": "مراجعة التقارير →"
+      },
+      "jobs": {
+        "title": "الوظائف",
+        "description": "إجمالي إعلانات الوظائف",
+        "applications": "طلبات"
+      },
+      "tenders": {
+        "title": "المناقصات",
+        "description": "إجمالي إعلانات المناقصات",
+        "applications": "طلبات"
+      }
+    },
+    "recentJobs": {
+      "title": "الوظائف الأخيرة",
+      "description": "أحدث إعلانات الوظائف على المنصة",
+      "noJobs": "لم يتم نشر أي وظائف بعد",
+      "company": "شركة"
+    },
+    "recentTenders": {
+      "title": "المناقصات الأخيرة",
+      "description": "أحدث إعلانات المناقصات على المنصة",
+      "noTenders": "لم يتم نشر أي مناقصات بعد",
+      "organization": "منظمة"
+    },
+    "pendingOrganizations": {
+      "title": "المنظمات المعلقة",
+      "description": "الملفات الشخصية في انتظار الموافقة",
+      "noPending": "لا توجد منظمات معلقة",
+      "unknownOwner": "مالك غير معروف"
+    },
+    "pendingCompanies": {
+      "title": "الشركات المعلقة",
+      "description": "حسابات نشر الوظائف في انتظار المراجعة",
+      "noPending": "لا توجد شركات معلقة",
+      "unknownOwner": "مالك غير معروف"
+    }
+  },
+  "AdminReports": {
+    "title": "القوائم المبلغ عنها",
+    "subtitle": "مراجعة الوظائف أو المناقصات المشبوهة التي أبلغ عنها المستخدمون",
+    "backToDashboard": "العودة إلى لوحة تحكم المدير",
+    "noReports": "لا توجد تقارير بعد.",
+    "report": "تقرير",
+    "submitted": "تم الإرسال",
+    "by": "بواسطة",
+    "anonymous": "مجهول",
+    "listingType": "نوع القائمة:",
+    "unknown": "غير معروف",
+    "viewListing": "عرض القائمة",
+    "details": "التفاصيل",
+    "contact": "جهة الاتصال:",
+    "status": {
+      "new": "جديد",
+      "inReview": "قيد المراجعة",
+      "resolved": "تم الحل"
+    }
+  },
+  "ApproveEntityButton": {
+    "approving": "جاري الموافقة...",
+    "approve": "موافقة"
+  },
+  "ReportStatusForm": {
+    "label": "حالة الإشراف",
+    "selectPlaceholder": "اختر الحالة",
+    "status": {
+      "new": "جديد",
+      "inReview": "قيد المراجعة",
+      "resolved": "تم الحل"
+    },
+    "error": "تعذر تحديث الحالة"
+  },
+  "OrganizationDashboard": {
+    "title": "لوحة تحكم المنظمة",
+    "subtitle": "هل تحتاج إلى نشر وظيفة بدلاً من ذلك؟ انتقل إلى لوحة تحكم الشركة. نموذج المناقصة أدناه مصمم خصيصًا لمتطلبات المنظمة.",
+    "alerts": {
+      "profileIncomplete": {
+        "title": "الملف الشخصي غير مكتمل",
+        "description": "أكمل ملف منظمتك (رقم الترخيص ونسخة الترخيص وقطاعات العمل) لبدء نشر المناقصات.",
+        "completeProfile": "إكمال الملف الشخصي"
+      },
+      "pendingApproval": {
+        "title": "في انتظار الموافقة",
+        "description": "ملف منظمتك مكتمل وقيد المراجعة. ستتمكن من نشر المناقصات بمجرد الموافقة عليها من قبل فريقنا."
+      },
+      "accountApproved": {
+        "title": "تمت الموافقة على الحساب",
+        "description": "تمت الموافقة على منظمتك. يمكنك الآن نشر المناقصات وإدارة منظمتك."
+      }
+    },
+    "stats": {
+      "totalTenders": {
+        "title": "إجمالي المناقصات",
+        "description": "جميع المناقصات المنشورة"
+      },
+      "openTenders": {
+        "title": "المناقصات المفتوحة",
+        "description": "تقبل الطلبات حاليًا"
+      },
+      "applications": {
+        "title": "الطلبات",
+        "description": "إجمالي الطلبات المستلمة"
+      },
+      "totalViews": {
+        "title": "إجمالي المشاهدات",
+        "description": "مشاهدات المناقصة"
+      }
+    },
+    "quickActions": {
+      "title": "إجراءات سريعة",
+      "description": "إدارة منظمتك والمناقصات",
+      "postNewTender": "نشر مناقصة جديدة",
+      "manageTenders": "إدارة المناقصات",
+      "editProfile": "تعديل ملف المنظمة"
+    },
+    "applications": {
+      "title": "الطلبات",
+      "description": "مراجعة الطلبات من المرشحين",
+      "viewAll": "عرض جميع الطلبات"
+    },
+    "postTenderTooltips": {
+      "completeProfile": "أكمل ملفك الشخصي لنشر المناقصات",
+      "pendingApproval": "في انتظار الموافقة",
+      "createTender": "إنشاء مناقصة جديدة"
+    }
+  },
+  "OrganizationProfile": {
+    "backToDashboard": "العودة إلى لوحة التحكم",
+    "title": "ملف المنظمة",
+    "subtitle": "تحديث معلومات منظمتك"
+  },
+  "OrganizationProfileForm": {
+    "alerts": {
+      "incomplete": {
+        "title": "أكمل ملف منظمتك",
+        "description": "لنشر المناقصات، يجب عليك إكمال ملف منظمتك من خلال تقديم: رقم الترخيص ونسخة الترخيص وقطاع عمل واحد على الأقل. بمجرد اكتمالها، سيتم مراجعة ملفك الشخصي للموافقة."
+      },
+      "complete": {
+        "title": "الملف الشخصي مكتمل",
+        "description": "ملف منظمتك مكتمل. يمكنك الآن نشر المناقصات بمجرد الموافقة على حسابك من قبل فريقنا."
+      }
+    },
+    "card": {
+      "title": "معلومات المنظمة",
+      "description": "تحديث تفاصيل منظمتك. يجب إكمال الحقول المطلوبة قبل أن تتمكن من نشر المناقصات."
+    },
+    "fields": {
+      "name": "اسم المنظمة *",
+      "description": "الوصف",
+      "website": "الموقع الإلكتروني",
+      "location": "الموقع",
+      "industry": "الصناعة",
+      "licenseNumber": "رقم الترخيص *",
+      "licenseNumberHint": "(مطلوب لنشر المناقصات)",
+      "licenseFile": "نسخة الترخيص *",
+      "licenseFileHint": "(PDF أو صورة، بحد أقصى 5 ميجابايت)",
+      "licenseFileUploaded": "تم تحميل ملف الترخيص بالفعل",
+      "view": "عرض",
+      "workSectors": "قطاعات العمل *",
+      "workSectorsHint": "(اختر واحدًا على الأقل)",
+      "selected": "المحدد:"
+    },
+    "placeholders": {
+      "name": "منظمتي",
+      "description": "أخبرنا عن منظمتك...",
+      "website": "https://example.com",
+      "location": "دمشق، سوريا",
+      "industry": "مثلًا: البناء، الرعاية الصحية، التكنولوجيا",
+      "licenseNumber": "أدخل رقم ترخيص منظمتك"
+    },
+    "errors": {
+      "fileSize": "يجب أن يكون حجم الملف أقل من 5 ميجابايت",
+      "fileType": "يجب أن يكون الملف صورة أو PDF",
+      "generic": "حدث خطأ"
+    },
+    "success": "تم تحديث ملف المنظمة بنجاح!",
+    "buttons": {
+      "saving": "جاري الحفظ...",
+      "saveChanges": "حفظ التغييرات"
+    }
+  },
+  "OrganizationSecondaryAccounts": {
+    "title": "الحسابات الثانوية",
+    "description": "دعوة أعضاء فريق إضافيين لإدارة منظمتك. سيكون لديهم إمكانية الوصول لنشر المناقصات وإدارة الطلبات.",
+    "fields": {
+      "email": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "زميل@example.com"
+    },
+    "buttons": {
+      "sending": "جاري الإرسال...",
+      "sendInvitation": "إرسال الدعوة"
+    },
+    "alerts": {
+      "error": "حدث خطأ",
+      "success": {
+        "title": "تم إرسال الدعوة بنجاح!",
+        "description": "سيستلم المستخدم بريدًا إلكترونيًا مع تعليمات للانضمام إلى منظمتك."
+      }
+    },
+    "pendingInvitations": "الدعوات المعلقة",
+    "status": {
+      "pending": "معلق",
+      "accepted": "مقبول",
+      "rejected": "مرفوض"
+    }
+  },
+  "OrganizationPermissionsGuide": {
+    "title": "ما يمكن لمنظمتك رؤيته",
+    "description": "فهم قدرات وأذونات منظمتك",
+    "postTenders": {
+      "title": "نشر المناقصات",
+      "description": "إنشاء وإدارة فرص المناقصات. يمكنك نشر ما يصل إلى مناقصتين مجانًا، مع إمكانية الحصول على فتحات إضافية عند الطلب."
+    },
+    "manageApplications": {
+      "title": "إدارة الطلبات",
+      "description": "مراجعة الطلبات من المرشحين، قبولها أو رفضها، والتواصل مع المتقدمين."
+    },
+    "viewAnalytics": {
+      "title": "عرض التحليلات",
+      "description": "تتبع المشاهدات والطلبات ومقاييس التفاعل لمناقصاتك."
+    },
+    "teamManagement": {
+      "title": "إدارة الفريق",
+      "description": "دعوة حسابات ثانوية للمساعدة في إدارة منظمتك. يمكن لجميع أعضاء الفريق نشر المناقصات وإدارة الطلبات."
+    },
+    "note": "ملاحظة: يجب أن يكون ملف منظمتك مكتملاً (رقم الترخيص ونسخة الترخيص وقطاعات العمل) ومُوافقًا عليه من قبل فريقنا قبل أن تتمكن من نشر المناقصات. يضمن ذلك جودة وأصالة الفرص على منصتنا."
+  },
+  "OrganizationTenders": {
+    "backToDashboard": "العودة إلى لوحة التحكم",
+    "manageTitle": "إدارة المناقصات",
+    "manageSubtitle": "عرض وإدارة جميع مناقصاتك",
+    "noTendersYet": "لم تنشر أي مناقصات بعد",
+    "postYourFirstTender": "نشر أول مناقصة لك",
+    "tenderCard": {
+      "posted": "نُشر",
+      "views": "مشاهدات",
+      "applications": "طلبات",
+      "edit": "تعديل",
+      "view": "عرض"
+    },
+    "status": {
+      "open": "مفتوح",
+      "closed": "مغلق",
+      "draft": "مسودة"
+    }
+  },
+  "OrganizationTenderNew": {
+    "backToTenders": "العودة إلى المناقصات",
+    "title": "نشر مناقصة جديدة",
+    "subtitle": "إنشاء فرصة مناقصة جديدة"
+  },
+  "TenderForm": {
+    "badge": {
+      "edit": "تعديل",
+      "new": "جديد"
+    },
+    "title": {
+      "edit": "تعديل المناقصة",
+      "new": "تفاصيل المناقصة"
+    },
+    "description": "املأ المعلومات حول مناقصتك. لم تعد نطاقات الميزانية مطلوبة ومخفية من القوائم.",
+    "freePostsRemaining": "منشورات المناقصة المجانية المتبقية: {remaining} / {limit}",
+    "freePostsAvailable": "لا تزال فتحات المناقصة التكميلية متاحة. سيؤدي نشر هذه المناقصة إلى استخدام أحد منشوراتك المجانية.",
+    "freePostsUsed": "لقد استخدمت فتحات المناقصة التكميلية. اتصل بالدعم لتوسيع قدرة نشر المناقصات لديك.",
+    "freePostsInfo": "تحصل كل منظمة على {total} منشورات مجانية في المجموع (مناقصتان + منشوران وظيفيان). يتم عرض توفر فتحة الوظيفة على صفحة نشر الوظيفة.",
+    "fields": {
+      "title": "عنوان المناقصة *",
+      "description": "الوصف *",
+      "requirements": "المتطلبات",
+      "location": "الموقع",
+      "deadline": "الموعد النهائي",
+      "category": "الفئة",
+      "status": "الحالة *"
+    },
+    "placeholders": {
+      "title": "مثلًا: إدارة مشروع البناء",
+      "description": "اوصف فرصة المناقصة...",
+      "requirements": "اذكر المتطلبات للمتقدمين...",
+      "location": "مثلًا: دمشق، سوريا",
+      "category": "مثلًا: البناء، تكنولوجيا المعلومات، الرعاية الصحية"
+    },
+    "status": {
+      "draft": "مسودة",
+      "open": "مفتوح",
+      "closed": "مغلق"
+    },
+    "errors": {
+      "noFreePosts": "لقد استخدمت جميع منشورات المناقصة التكميلية. يرجى الاتصال بفريقنا لفتح إعلانات المناقصات الإضافية.",
+      "generic": "حدث خطأ"
+    },
+    "buttons": {
+      "saving": "جاري الحفظ...",
+      "updateTender": "تحديث المناقصة",
+      "postTender": "نشر المناقصة",
+      "cancel": "إلغاء"
+    }
+  },
+  "PostTenderCTA": {
+    "defaultText": "نشر مناقصة جديدة"
+  },
+  "Footer": {
+    "jobSeekers": "للباحثين عن عمل",
+    "employers": "لأصحاب العمل",
+    "company": "الشركة",
+    "brandDescription": "نربط المواهب بالفرص في سوريا وخارجها. اعثر على خطوتك المهنية التالية أو اكتشف أفضل المرشحين.",
+    "links": {
+      "work": "العمل",
+      "jobs": "تصفّح الوظائف",
+      "tenders": "تصفّح المناقصات",
+      "dashboard": "لوحتك",
+      "postJob": "انشر وظيفة",
+      "postTender": "انشر مناقصة",
+      "manage": "إدارة الإعلانات",
+      "about": "من نحن",
+      "contact": "اتصل بنا",
+      "terms": "الشروط",
+      "privacy": "الخصوصية",
+      "support": "الدعم"
+    },
+    "copyright": "جميع الحقوق محفوظة."
+  }
+}
+
