@@ -5,7 +5,7 @@ import { Building2, Menu, X } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { logout } from "@/lib/auth/client"
 import { Button } from "@/components/ui/button"
-import { Link, useRouter } from "@/navigation"
+import { Link, useRouter, usePathname } from "@/navigation"
 import { LanguageToggle } from "@/components/language-toggle"
 
 interface NavHeaderProps {
@@ -18,11 +18,24 @@ interface NavHeaderProps {
 export function NavHeader({ user }: NavHeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const router = useRouter()
+  const pathname = usePathname()
   const tNav = useTranslations("Navigation")
   const tCommon = useTranslations("Common")
 
   const handleSignOut = async () => {
     logout()
+  }
+
+  const isActive = (href: string) => {
+    return pathname === href || pathname?.startsWith(href + "/")
+  }
+
+  const getNavLinkClass = (href: string) => {
+    const baseClass = "text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200"
+    if (isActive(href)) {
+      return `${baseClass} text-blue-700 bg-blue-50/80 font-semibold`
+    }
+    return `${baseClass} text-foreground hover:text-blue-700 hover:bg-gray-50/80`
   }
 
   return (
@@ -40,20 +53,23 @@ export function NavHeader({ user }: NavHeaderProps) {
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-1 md:flex">
-          <Link href="/work" className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80">
+          <Link href="/work" className={getNavLinkClass("/work")}>
             {tNav("work")}
           </Link>
-          <Link href="/browse/jobs" className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80">
+          <Link href="/browse/jobs" className={getNavLinkClass("/browse/jobs")}>
             {tNav("jobs")}
           </Link>
-          <Link href="/browse/tenders" className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80">
+          <Link href="/browse/tenders" className={getNavLinkClass("/browse/tenders")}>
             {tNav("tenders")}
           </Link>
-          <Link href="/about" className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80">
+          <Link href="/about" className={getNavLinkClass("/about")}>
             {tNav("about")}
           </Link>
+          <Link href="/pricing" className={getNavLinkClass("/pricing")}>
+            {tNav("pricing")}
+          </Link>
           {user && (
-            <Link href="/dashboard" className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80">
+            <Link href="/dashboard" className={getNavLinkClass("/dashboard")}>
               {tNav("dashboard")}
             </Link>
           )}
@@ -96,36 +112,43 @@ export function NavHeader({ user }: NavHeaderProps) {
           <nav className="flex flex-col gap-2">
             <Link
               href="/work"
-              className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80"
+              className={getNavLinkClass("/work")}
               onClick={() => setMobileMenuOpen(false)}
             >
               {tNav("work")}
             </Link>
             <Link
               href="/browse/jobs"
-              className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80"
+              className={getNavLinkClass("/browse/jobs")}
               onClick={() => setMobileMenuOpen(false)}
             >
               {tNav("jobs")}
             </Link>
             <Link
               href="/browse/tenders"
-              className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80"
+              className={getNavLinkClass("/browse/tenders")}
               onClick={() => setMobileMenuOpen(false)}
             >
               {tNav("tenders")}
             </Link>
             <Link
               href="/about"
-              className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80"
+              className={getNavLinkClass("/about")}
               onClick={() => setMobileMenuOpen(false)}
             >
               {tNav("about")}
             </Link>
+            <Link
+              href="/pricing"
+              className={getNavLinkClass("/pricing")}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {tNav("pricing")}
+            </Link>
             {user && (
               <Link
                 href="/dashboard"
-                className="text-sm font-medium text-foreground hover:text-blue-700 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-gray-50/80"
+                className={getNavLinkClass("/dashboard")}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {tNav("dashboard")}

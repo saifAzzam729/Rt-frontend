@@ -1,7 +1,6 @@
 import { redirect } from "@/navigation";
 import { requireAuth } from "@/lib/auth/server";
 import { createServerApiClient } from "@/lib/api/server";
-import { NavHeader } from "@/components/nav-header";
 import { TenderForm } from "@/components/tender-form";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/navigation";
@@ -51,7 +50,6 @@ export default async function NewTenderPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <NavHeader user={{ email: profile.email, role: profile.role }} />
       <main className="flex-1 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto px-4 py-8 max-w-3xl">
           <Button

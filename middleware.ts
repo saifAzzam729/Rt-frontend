@@ -12,6 +12,9 @@ const PUBLIC_PATHS = [
   "/auth/login",
   "/auth/sign-up",
   "/auth/verify",
+  "/terms",
+  "/privacy",
+  "/contact",
 ];
 
 function isPublicRoute(pathname: string) {

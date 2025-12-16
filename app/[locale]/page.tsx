@@ -17,7 +17,6 @@ import { HowItWorksBar } from "@/components/how-it-works-bar";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { Link } from "@/navigation";
-import { NavHeader } from "@/components/nav-header";
 
 export default async function HomePage() {
   const tHome = await getTranslations("Home");
@@ -178,8 +177,6 @@ export default async function HomePage() {
           />
         </div>
       </div>
-
-      <NavHeader />
 
       {/* Hero Section */}
       <section className="relative z-10 overflow-hidden py-20 md:py-32">

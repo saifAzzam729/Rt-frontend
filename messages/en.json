@@ -21,6 +21,7 @@
     "jobs": "Jobs",
     "tenders": "Tenders",
     "about": "About",
+    "pricing": "Pricing",
     "dashboard": "Dashboard"
   },
   "Home": {
@@ -103,13 +104,23 @@
       "title": "Welcome Back",
       "description": "Sign in to access your dashboard",
       "email": "Email",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+963 XXX XXX XXX",
       "password": "Password",
       "submit": "Sign In",
       "subtext": "Don't have an account?",
       "signup": "Sign up",
       "sending": "Sending code...",
       "sendingCta": "Email me a login code",
-      "signinLoading": "Signing in..."
+      "signinLoading": "Signing in...",
+      "termsAgreementCheckboxPrefix": "I agree to the",
+      "termsAgreementCheckboxConjunction": "and",
+      "termsLink": "Terms of Service",
+      "privacyLink": "Privacy Policy",
+      "errors": {
+        "termsRequired": "You must accept the Terms of Service and Privacy Policy to continue.",
+        "phoneInvalid": "Please enter a valid phone number"
+      }
     },
     "signUp": {
       "title": "Create Account",
@@ -118,6 +129,8 @@
       "fullNamePlaceholder": "John Doe",
       "email": "Email",
       "emailPlaceholder": "your@email.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+963 XXX XXX XXX",
       "password": "Password",
       "passwordHelp": "Use a strong password to secure your account.",
       "accountType": "Account Type",
@@ -136,7 +149,9 @@
       },
       "errors": {
         "passwordInvalid": "Password does not meet the security requirements shown below.",
-        "generic": "An error occurred"
+        "phoneInvalid": "Please enter a valid phone number",
+        "generic": "An error occurred",
+        "termsRequired": "You must accept the Terms of Service and Privacy Policy to continue."
       },
       "submit": "Create Account",
       "submitting": "Creating account...",
@@ -154,7 +169,11 @@
         "next": "Next"
       },
       "accountTypeHelp": "Choose the account type that matches your needs",
-      "termsAgreement": "By creating an account, you agree to our Terms of Service and Privacy Policy."
+      "termsAgreement": "By creating an account, you agree to our Terms of Service and Privacy Policy.",
+      "termsAgreementCheckboxPrefix": "I agree to the",
+      "termsAgreementCheckboxConjunction": "and",
+      "termsLink": "Terms of Service",
+      "privacyLink": "Privacy Policy"
     }
   },
   "Work": {
@@ -861,6 +880,160 @@
       "support": "Support"
     },
     "copyright": "All rights reserved."
+  },
+  "Terms": {
+    "badge": "Legal",
+    "title": "Terms of Service",
+    "subtitle": "Please read these terms carefully before using our platform.",
+    "lastUpdated": "Last updated: January 2025",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using RT-SYR, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service."
+      },
+      "use": {
+        "title": "2. Use License",
+        "content": "Permission is granted to temporarily access the materials on RT-SYR for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not: modify or copy the materials; use the materials for any commercial purpose or for any public display; attempt to decompile or reverse engineer any software contained on RT-SYR; remove any copyright or other proprietary notations from the materials."
+      },
+      "userAccounts": {
+        "title": "3. User Accounts",
+        "content": "You are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account or password."
+      },
+      "prohibited": {
+        "title": "4. Prohibited Uses",
+        "content": "You may not use our platform: in any way that violates any applicable national or international law or regulation; to transmit, or procure the sending of, any advertising or promotional material without our prior written consent; to impersonate or attempt to impersonate the company, a company employee, another user, or any other person or entity."
+      },
+      "liability": {
+        "title": "5. Limitation of Liability",
+        "content": "In no event shall RT-SYR or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on RT-SYR, even if RT-SYR or a RT-SYR authorized representative has been notified orally or in writing of the possibility of such damage."
+      },
+      "changes": {
+        "title": "6. Revisions and Errata",
+        "content": "The materials appearing on RT-SYR could include technical, typographical, or photographic errors. RT-SYR does not warrant that any of the materials on its website are accurate, complete, or current. RT-SYR may make changes to the materials contained on its website at any time without notice."
+      },
+      "contact": {
+        "title": "7. Contact Information",
+        "content": "If you have any questions about these Terms of Service, please contact us through our contact page."
+      }
+    }
+  },
+  "Privacy": {
+    "badge": "Privacy",
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is important to us. This policy explains how we collect, use, and protect your information.",
+    "lastUpdated": "Last updated: January 2025",
+    "sections": {
+      "information": {
+        "title": "1. Information We Collect",
+        "content": "We collect information that you provide directly to us, such as when you create an account, post a job or tender, apply for opportunities, or contact us for support. This may include your name, email address, phone number, company information, and any other information you choose to provide."
+      },
+      "collection": {
+        "title": "2. How We Collect Information",
+        "content": "We collect information through various methods, including: information you provide when registering for an account; information you provide when posting jobs or tenders; information you provide when applying for opportunities; and information collected automatically when you use our services."
+      },
+      "use": {
+        "title": "3. How We Use Your Information",
+        "content": "We use the information we collect to: provide, maintain, and improve our services; process transactions and send related information; send technical notices, updates, security alerts, and support messages; respond to your comments, questions, and requests; and monitor and analyze trends, usage, and activities."
+      },
+      "sharing": {
+        "title": "4. Information Sharing",
+        "content": "We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following situations: with your consent; to comply with legal obligations; to protect and defend our rights or property; and with service providers who assist us in operating our platform."
+      },
+      "security": {
+        "title": "5. Data Security",
+        "content": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure."
+      },
+      "rights": {
+        "title": "6. Your Rights",
+        "content": "You have the right to access, update, or delete your personal information at any time. You can do this by logging into your account and updating your profile, or by contacting us directly through our contact page."
+      },
+      "changes": {
+        "title": "7. Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last updated' date."
+      },
+      "contact": {
+        "title": "8. Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us through our contact page."
+      }
+    }
+  },
+  "Contact": {
+    "badge": "Support",
+    "title": "Contact & Support",
+    "subtitle": "We're here to help. Get in touch with us for any questions, concerns, or support needs.",
+    "email": {
+      "title": "Email Us",
+      "description": "Send us an email and we'll get back to you as soon as possible.",
+      "address": "support@rt-syr.com",
+      "button": "Send Email"
+    },
+    "support": {
+      "title": "Support Hours",
+      "description": "Our support team is available to assist you.",
+      "hours": "Monday - Friday: 9:00 AM - 5:00 PM (GMT+2)"
+    },
+    "additional": {
+      "title": "Additional Information",
+      "content": "For technical issues, account problems, or general inquiries, please use the email above. We aim to respond to all inquiries within 24-48 hours during business days."
+    }
+  },
+  "Pricing": {
+    "badge": "Pricing Plans",
+    "title": "Choose Your Plan",
+    "description": "Select the perfect pricing plan that fits your needs. All plans include unlimited applications and priority support.",
+    "loading": "Loading pricing plans...",
+    "perYear": "/year",
+    "billedAnnually": "Billed annually",
+    "cta": {
+      "selectPlan": "Select Plan"
+    },
+    "badges": {
+      "yearly": "Yearly",
+      "oneTime": "One-time",
+      "popular": "Most Popular"
+    },
+    "sections": {
+      "tender": {
+        "title": "Tender Plans",
+        "description": "Post tenders and reach qualified vendors"
+      },
+      "job": {
+        "title": "Job Advertisement Plans",
+        "description": "Post job advertisements and find the best talent"
+      },
+      "combined": {
+        "title": "Combined Plans",
+        "description": "Get the best value with unlimited tenders and job postings"
+      },
+      "vendor": {
+        "title": "Vendor Plans",
+        "description": "Vendor subscriptions and advertisement options"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards and bank transfers. Payment processing is secure and handled by our trusted payment partners."
+      },
+      "q2": {
+        "question": "Can I upgrade or downgrade my plan?",
+        "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle for yearly plans."
+      },
+      "q3": {
+        "question": "What happens if I exceed my plan limits?",
+        "answer": "If you exceed your plan limits, you can purchase additional postings or upgrade to a higher tier plan. Contact us for assistance."
+      }
+    },
+    "contact": {
+      "needHelp": "Need help choosing the right plan?",
+      "contactUs": "Contact Us"
+    },
+    "errors": {
+      "title": "Error Loading Pricing",
+      "fetchFailed": "Failed to load pricing plans. Please try again later.",
+      "retry": "Retry"
+    }
   }
 }
 

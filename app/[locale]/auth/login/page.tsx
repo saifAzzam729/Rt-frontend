@@ -13,28 +13,53 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Link } from "@/navigation";
 import { useRouter } from "@/navigation";
 import { useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const t = useTranslations("Auth.login");
+  const locale = useLocale();
+  const isRTL = locale === "ar";
+
+  const validatePhone = (phoneNumber: string): boolean => {
+    // Accepts formats like: +963123456789, 00963123456789, 1234567890, etc.
+    // Removes spaces, dashes, parentheses for validation
+    const cleaned = phoneNumber.replace(/[\s\-\(\)]/g, '')
+    // Check if it's a valid phone number (at least 8 digits, can start with + or 00)
+    return /^(\+|00)?[1-9]\d{7,14}$/.test(cleaned) && cleaned.replace(/^(\+|00)/, '').length >= 8
+  }
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
 
+    if (!acceptedTerms) {
+      setError(t("errors.termsRequired") || "You must accept the Terms of Service and Privacy Policy to continue.");
+      setIsLoading(false);
+      return;
+    }
+
+    if (!validatePhone(phone)) {
+      setError(t("errors.phoneInvalid") || "Please enter a valid phone number");
+      setIsLoading(false);
+      return;
+    }
+
     try {
-      // Login via backend API
-      const response = await apiClient.login(email, password);
+      // Login via backend API - can use email or phone
+      const response = await apiClient.login(email, password, phone);
 
       // Store tokens in cookies (server-side) via API route
       const sync = await fetch("/api/auth/set-tokens", {
@@ -143,7 +168,21 @@ export default function LoginPage() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="border-gray-200/60 shadow-professional"
+                    dir="ltr"
+                    className="text-left border-gray-200/60 shadow-professional"
+                  />
+                </div>
+                <div className="grid gap-2">
+                  <Label htmlFor="phone" className="font-medium">{t("phone")}</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder={t("phonePlaceholder") || "+963 XXX XXX XXX"}
+                    required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    dir="ltr"
+                    className="text-left border-gray-200/60 shadow-professional"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -162,10 +201,32 @@ export default function LoginPage() {
                     {error}
                   </div>
                 )}
+                <div className={`flex items-start gap-3 p-4 rounded-lg bg-blue-50/80 border border-blue-200/60 ${isRTL ? "flex-row-reverse" : ""}`}>
+                  <Checkbox
+                    id="terms-checkbox-login"
+                    checked={acceptedTerms}
+                    onCheckedChange={(checked) => setAcceptedTerms(checked === true)}
+                    className="mt-0.5"
+                  />
+                  <label
+                    htmlFor="terms-checkbox-login"
+                    className={`text-sm text-blue-900 cursor-pointer flex-1 ${isRTL ? "text-right" : "text-left"}`}
+                  >
+                    {t("termsAgreementCheckboxPrefix") || "I agree to the"}{" "}
+                    <Link href="/terms" className="font-semibold underline hover:text-blue-950">
+                      {t("termsLink") || "Terms of Service"}
+                    </Link>
+                    {" "}{t("termsAgreementCheckboxConjunction") || "and"}{" "}
+                    <Link href="/privacy" className="font-semibold underline hover:text-blue-950">
+                      {t("privacyLink") || "Privacy Policy"}
+                    </Link>
+                    .
+                  </label>
+                </div>
                 <Button
                   type="submit"
                   className="w-full btn-gradient-primary shadow-professional-md hover:shadow-professional-lg transition-all duration-200 text-white active:scale-[0.98]"
-                  disabled={isLoading}
+                  disabled={isLoading || !acceptedTerms}
                 >
                   {isLoading ? t("signinLoading") : t("submit")}
                 </Button>

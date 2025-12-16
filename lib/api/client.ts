@@ -138,6 +138,7 @@ class ApiClient {
     email: string;
     password: string;
     full_name: string;
+    phone: string;
     role: UserRole;
   }) {
     return this.request('/auth/signup', {
@@ -147,10 +148,10 @@ class ApiClient {
     });
   }
 
-  async login(email: string, password: string) {
+  async login(email: string, password: string, phone?: string) {
     const response: any = await this.request('/auth/login', {
       method: 'POST',
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, password, phone }),
     });
     
     if (response.access_token && response.refresh_token) {
@@ -423,6 +424,56 @@ class ApiClient {
 
   async uploadAvatar(file: File) {
     return this.uploadFile('/upload/avatar', file);
+  }
+
+  // Pricing endpoints (public, no auth required)
+  async getPricing() {
+    // Pricing endpoints are public, so we make a direct fetch without auth
+    const url = `${this.baseURL}/pricing`;
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      throw await this.handleError(response);
+    }
+
+    return response.json();
+  }
+
+  async getPricingPlan(planId: string) {
+    const url = `${this.baseURL}/pricing/plan/${planId}`;
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      throw await this.handleError(response);
+    }
+
+    return response.json();
+  }
+
+  async calculatePrice(planId: string, quantity: number = 1) {
+    const url = `${this.baseURL}/pricing/calculate?planId=${planId}&quantity=${quantity}`;
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      throw await this.handleError(response);
+    }
+
+    return response.json();
   }
 }
 

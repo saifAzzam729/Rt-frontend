@@ -1,5 +1,4 @@
 import { createServerApiClient } from "@/lib/api/server";
-import { NavHeader } from "@/components/nav-header";
 import {
   Card,
   CardContent,
@@ -25,16 +24,6 @@ export default async function BrowseTendersPage({
   const isRTL = rtlLocales.includes(locale as (typeof rtlLocales)[number]);
 
   const params = await searchParams;
-
-  // Get user profile if authenticated (optional for browse pages)
-  let profile = null;
-  try {
-    const apiClient = createServerApiClient();
-    profile = await apiClient.getMyProfile();
-  } catch {
-    // Not authenticated, that's fine for browse pages
-    profile = null;
-  }
 
   // Fetch open tenders from API
   const apiClient = createServerApiClient();
@@ -69,9 +58,6 @@ export default async function BrowseTendersPage({
 
   return (
     <div className="flex min-h-screen flex-col">
-      <NavHeader
-        user={profile ? { email: profile.email, role: profile.role } : null}
-      />
       <main className="flex-1 bg-gradient-professional-subtle relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">

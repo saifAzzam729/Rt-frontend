@@ -5,6 +5,8 @@ import { getMessages, unstable_setRequestLocale } from "next-intl/server"
 import { Analytics } from "@vercel/analytics/next"
 import { Inter } from "next/font/google"
 import { locales, rtlLocales, type Locale } from "@/i18n/config"
+import { NavHeader } from "@/components/nav-header"
+import { getCurrentUserProfile } from "@/lib/auth/server"
 import "../globals.css"
 
 const inter = Inter({
@@ -36,10 +38,22 @@ export default async function LocaleLayout({
   const messages = await getMessages()
   const dir = rtlLocales.includes(safeLocale) ? "rtl" : "ltr"
 
+  // Get user profile if authenticated (optional, won't throw if not authenticated)
+  let profile = null
+  try {
+    profile = await getCurrentUserProfile()
+  } catch {
+    // Not authenticated, that's fine
+    profile = null
+  }
+
   return (
     <html lang={safeLocale} dir={dir}>
       <body className={`${inter.variable} font-sans antialiased`}>
         <NextIntlClientProvider locale={safeLocale} messages={messages}>
+          <NavHeader
+            user={profile ? { email: profile.email, role: profile.role } : null}
+          />
           {children}
           <Analytics />
         </NextIntlClientProvider>

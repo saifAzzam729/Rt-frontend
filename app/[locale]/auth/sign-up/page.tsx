@@ -13,6 +13,7 @@ import { useRouter } from "@/navigation"
 import { useState } from "react"
 import { CheckCircle2, CircleAlert, ChevronRight, ChevronLeft, User, Lock, Building2, CheckCircle } from "lucide-react"
 import { useTranslations, useLocale } from "next-intl"
+import { Checkbox } from "@/components/ui/checkbox"
 
 const PASSWORD_REQUIREMENT_IDS = [
   "length",
@@ -65,7 +66,9 @@ export default function SignUpPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [fullName, setFullName] = useState("")
+  const [phone, setPhone] = useState("")
   const [role, setRole] = useState<"user" | "organization" | "company">("user")
+  const [acceptedTerms, setAcceptedTerms] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
@@ -79,14 +82,24 @@ export default function SignUpPage() {
     { id: 4, label: tAuth("steps.review") || "Review", icon: CheckCircle },
   ] as const
 
+  const validatePhone = (phoneNumber: string): boolean => {
+    // Accepts formats like: +963123456789, 00963123456789, 1234567890, etc.
+    // Removes spaces, dashes, parentheses for validation
+    const cleaned = phoneNumber.replace(/[\s\-\(\)]/g, '')
+    // Check if it's a valid phone number (at least 8 digits, can start with + or 00)
+    return /^(\+|00)?[1-9]\d{7,14}$/.test(cleaned) && cleaned.replace(/^(\+|00)/, '').length >= 8
+  }
+
   const validateStep = (step: Step): boolean => {
     switch (step) {
       case 1:
-        return fullName.trim().length > 0 && email.trim().length > 0 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+        return fullName.trim().length > 0 && email.trim().length > 0 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && validatePhone(phone)
       case 2:
         return isPasswordValid(password, passwordRequirements)
       case 3:
         return role !== null
+      case 4:
+        return acceptedTerms
       default:
         return true
     }
@@ -113,8 +126,20 @@ export default function SignUpPage() {
     setIsLoading(true)
     setError(null)
 
+    if (!acceptedTerms) {
+      setError(tAuth("errors.termsRequired") || "You must accept the Terms of Service and Privacy Policy to continue.")
+      setIsLoading(false)
+      return
+    }
+
     if (!isPasswordValid(password, passwordRequirements)) {
       setError(tAuth("errors.passwordInvalid"))
+      setIsLoading(false)
+      return
+    }
+
+    if (!validatePhone(phone)) {
+      setError(tAuth("errors.phoneInvalid") || "Please enter a valid phone number")
       setIsLoading(false)
       return
     }
@@ -125,6 +150,7 @@ export default function SignUpPage() {
         email,
         password,
         full_name: fullName,
+        phone,
         role,
       })
 
@@ -168,6 +194,21 @@ export default function SignUpPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                dir="ltr"
+                className="text-left border-gray-200/60 shadow-professional"
+              />
+            </div>
+            <div className="grid gap-2">
+              <Label htmlFor="phone" className={`font-semibold text-sm ${isRTL ? "text-right" : "text-left"}`}>
+                {tAuth("phone")}
+              </Label>
+              <Input
+                id="phone"
+                type="tel"
+                placeholder={tAuth("phonePlaceholder") || "+963 XXX XXX XXX"}
+                required
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 dir="ltr"
                 className="text-left border-gray-200/60 shadow-professional"
               />
@@ -255,15 +296,36 @@ export default function SignUpPage() {
                   <span className="text-sm font-medium">{email || "—"}</span>
                 </div>
                 <div className={`flex justify-between items-center ${isRTL ? "flex-row-reverse" : ""}`}>
+                  <span className="text-sm text-muted-foreground">{tAuth("phone")}:</span>
+                  <span className="text-sm font-medium">{phone || "—"}</span>
+                </div>
+                <div className={`flex justify-between items-center ${isRTL ? "flex-row-reverse" : ""}`}>
                   <span className="text-sm text-muted-foreground">{tAuth("accountType")}:</span>
                   <span className="text-sm font-medium">{tAuth(`roles.${role}`)}</span>
                 </div>
               </div>
             </div>
-            <div className="p-4 rounded-lg bg-blue-50/80 border border-blue-200/60">
-              <p className={`text-sm text-blue-900 ${isRTL ? "text-right" : "text-left"}`}>
-                {tAuth("termsAgreement") || "By creating an account, you agree to our Terms of Service and Privacy Policy."}
-              </p>
+            <div className={`flex items-start gap-3 p-4 rounded-lg bg-blue-50/80 border border-blue-200/60 ${isRTL ? "flex-row-reverse" : ""}`}>
+              <Checkbox
+                id="terms-checkbox"
+                checked={acceptedTerms}
+                onCheckedChange={(checked) => setAcceptedTerms(checked === true)}
+                className="mt-0.5"
+              />
+              <label
+                htmlFor="terms-checkbox"
+                className={`text-sm text-blue-900 cursor-pointer flex-1 ${isRTL ? "text-right" : "text-left"}`}
+              >
+                {tAuth("termsAgreementCheckboxPrefix") || "I agree to the"}{" "}
+                <Link href="/terms" className="font-semibold underline hover:text-blue-950">
+                  {tAuth("termsLink") || "Terms of Service"}
+                </Link>
+                {" "}{tAuth("termsAgreementCheckboxConjunction") || "and"}{" "}
+                <Link href="/privacy" className="font-semibold underline hover:text-blue-950">
+                  {tAuth("privacyLink") || "Privacy Policy"}
+                </Link>
+                .
+              </label>
             </div>
           </div>
         )

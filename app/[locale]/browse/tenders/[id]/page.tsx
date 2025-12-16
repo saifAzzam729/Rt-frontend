@@ -1,5 +1,4 @@
 import { createServerApiClient } from "@/lib/api/server";
-import { NavHeader } from "@/components/nav-header";
 import {
   Card,
   CardContent,
@@ -68,9 +67,6 @@ export default async function TenderDetailPage({
 
   return (
     <div className="flex min-h-screen flex-col">
-      <NavHeader
-        user={profile ? { email: profile.email, role: profile.role } : null}
-      />
       <main className="flex-1 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto px-4 py-8">
           <Button

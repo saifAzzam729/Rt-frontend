@@ -1,7 +1,6 @@
 import { redirect as nextRedirect } from "next/navigation";
 import { requireAuth } from "@/lib/auth/server";
 import { createServerApiClient } from "@/lib/api/server";
-import { NavHeader } from "@/components/nav-header";
 import { OrganizationProfileForm } from "@/components/organization-profile-form";
 import { OrganizationSecondaryAccounts } from "@/components/organization-secondary-accounts";
 import { OrganizationPermissionsGuide } from "@/components/organization-permissions-guide";
@@ -49,7 +48,6 @@ export default async function OrganizationProfilePage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <NavHeader user={{ email: profile.email, role: profile.role }} />
       <main className="flex-1 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto px-4 py-8 max-w-2xl">
           <Button

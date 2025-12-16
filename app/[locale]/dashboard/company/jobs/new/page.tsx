@@ -1,7 +1,6 @@
 import { redirect } from "@/navigation";
 import { requireAuth } from "@/lib/auth/server";
 import { createServerApiClient } from "@/lib/api/server";
-import { NavHeader } from "@/components/nav-header";
 import { JobForm } from "@/components/job-form";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/navigation";
@@ -46,7 +45,6 @@ export default async function NewJobPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <NavHeader user={{ email: profile.email, role: profile.role }} />
       <main className="flex-1 bg-gradient-to-br from-slate-50 via-indigo-50 to-white">
         <div className="relative">
           <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-indigo-300/30 blur-3xl" />
